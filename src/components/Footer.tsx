@@ -90,7 +90,7 @@ export default function Footer() {
                             E-Cell Office, First Floor Student Canteen ,<br />
                             Visvesvaraya National Institute of Technology,<br />
                             South Ambazari Road, Nagpur,<br />
-                            Maharashtra - 440010
+                            Maharashtra -440010
                         </p>
                     </div>
                 </div>
