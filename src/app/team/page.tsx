@@ -322,9 +322,12 @@ const advisoryTeam = [
     },
 ];
 
-const team = [
-    
-];
+type TeamGroup = {
+    role: string;
+    members: { name: string; position: string }[];
+};
+
+const team: TeamGroup[] = [];
 
 function TeamCard({ name, position }: { name: string, position: string }) {
     return (
