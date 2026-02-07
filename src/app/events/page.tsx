@@ -13,7 +13,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-rose-500/20 to-red-500/20",
-        logo: "/events/escaperoom-CL_1DC28.webp",
+        logo: "/escaperoom-CL_1DC28.webp",
         link: "https://docs.google.com/forms/d/e/1FAIpQLScsR58O5viGcxSRaCAL69OYS2Y9dplU2vEt0C1qRPDGIV2ukQ/viewform?usp=send_form"
     },
     {
@@ -23,7 +23,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-indigo-500/20 to-blue-500/20",
-        logo: "/events/iplauction-CM6tDsO9.webp",
+        logo: "/iplauction-CM6tDsO9.webp",
         link: "https://ipl.ecellvnit.org/"
     },
     {
@@ -33,7 +33,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-emerald-500/20 to-green-500/20",
-        logo: "/events/neo-s6SKDkcM.webp",
+        logo: "/neo-s6SKDkcM.webp",
         link: "https://neo.ecellvnit.org/"
     },
     {
@@ -43,7 +43,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-orange-500/20 to-amber-500/20",
-        logo: "/events/jugaad-Cwv8sXek.webp",
+        logo: "/jugaad-Cwv8sXek.webp",
         link: "https://jugaad.ecellvnit.org/"
     },
     {
@@ -53,7 +53,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-purple-500/20 to-pink-500/20",
-        logo: "/events/suc-Bc2Eb1A0.webp",
+        logo: "/suc-Bc2Eb1A0.webp",
         link: "https://startupconclave.ecellvnit.org/"
     },
     {
@@ -63,7 +63,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-slate-500/20 to-gray-500/20",
-        logo: "/events/wallstreet-BjgcvuFk.webp",
+        logo: "/wallstreet-BjgcvuFk.webp",
         link: "https://wallstreet.ecellvnit.org/"
     },
     {
@@ -73,7 +73,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-blue-500/20 to-cyan-500/20",
-        logo: "/events/ceo-CiTAFyd_.webp",
+        logo: "/ceo-CiTAFyd_.webp",
         link: "https://ceo.ecellvnit.org/"
     },
     {
@@ -83,7 +83,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-rose-500/20 to-red-500/20",
-        logo: "/events/expo-BuSr9Ws3.webp",
+        logo: "/expo-BuSr9Ws3.webp",
         link: "https://expo.ecellvnit.org/"
     },
     {
@@ -93,7 +93,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-amber-500/20 to-yellow-500/20",
-        logo: "/events/hultprize-CoQqOHCs.webp",
+        logo: "/hultprize-CoQqOHCs.webp",
         link: "https://www.instagram.com/hultprize_vnit/"
     },
     {
@@ -103,7 +103,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-teal-500/20 to-emerald-500/20",
-        logo: "/events/internshipfair-ognCY5vl.webp",
+        logo: "/internshipfair-ognCY5vl.webp",
         link: "mailto:team_ecell@vnit.ac.in"
     },
     {
@@ -113,7 +113,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-fuchsia-500/20 to-pink-500/20",
-        logo: "/events/networkingarena-D40gd633.webp",
+        logo: "/networkingarena-D40gd633.webp",
         link: "https://unstop.com/o/E3sMC2w?lb=XXfTQEEf&utm_medium=Share&utm_source=teamvni42274&utm_campaign=Workshops"
     },
     {
@@ -123,7 +123,7 @@ const allEvents = [
         date: "TBA",
         location: "VNIT Nagpur",
         image: "from-pink-500/20 to-rose-500/20",
-        logo: "/events/pitchinthecar-DyolDNEq.webp",
+        logo: "/pitchinthecar-DyolDNEq.webp",
         link: "https://unstop.com/o/CGW3AvD?lb=6vnimjjW&utm_medium=Share&utm_source=aryansin7258&utm_campaign=Competitions"
     },
 ];
