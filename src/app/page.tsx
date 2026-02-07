@@ -8,8 +8,9 @@ import Speakers from "@/components/Speakers";
 import Events from "@/components/Events";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import type { MotionProps } from "framer-motion";
 
-const sectionMotionProps = {
+const sectionMotionProps: MotionProps = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
   transition: { duration: 0.8, ease: "easeOut" },
