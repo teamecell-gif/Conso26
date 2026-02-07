@@ -11,7 +11,7 @@ export default function Stats() {
     return (
         <section className="py-20 border-y border-white/5 bg-black/50 backdrop-blur-sm">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center animate-fade-up">
                     {stats.map((stat, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <div className="text-4xl md:text-6xl font-bold font-display text-white mb-2 tabular-nums">

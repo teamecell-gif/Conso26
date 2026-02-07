@@ -20,7 +20,7 @@ export default function Speakers() {
             <div className="absolute top-1/2 left-0 w-full h-1 bg-conso-red/20 -translate-y-1/2 blur-xl" />
 
             <div className="container mx-auto px-6 mb-16">
-                <h2 className="text-4xl md:text-6xl font-display font-bold uppercase tracking-tight text-right">
+                <h2 className="text-4xl md:text-6xl font-display font-bold uppercase tracking-tight text-right animate-fade-up">
                     Keynote <span className="text-conso-red">Speakers</span>
                 </h2>
             </div>
@@ -29,7 +29,7 @@ export default function Speakers() {
                 {speakers.map((speaker, index) => (
                     <div
                         key={index}
-                        className="flex-shrink-0 w-[300px] md:w-[400px] relative group snap-center"
+                        className="flex-shrink-0 w-[300px] md:w-[400px] relative group snap-center animate-fade-up"
                     >
                         <div className="aspect-[3/4] bg-neutral-900 rounded-xl overflow-hidden relative border border-white/5 transition-all duration-500 group-hover:border-conso-red/50 group-hover:shadow-[0_0_50px_rgba(255,46,46,0.3)] group-hover:scale-[1.02]">
                             {/* Placeholder Content for Image */}
