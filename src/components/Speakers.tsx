@@ -1,15 +1,40 @@
 "use client";
 
 import { useRef } from "react";
-// import Image from "next/image"; // Assuming no images provided, using placeholders
-import { User, Mic } from "lucide-react";
+import Image from "next/image";
+import { Mic } from "lucide-react";
 
 const speakers = [
-    { name: "Dr. Kiran Bedi", role: "24th Lt. Governor Puducherry", color: "from-blue-500 to-cyan-500" },
-    { name: "Simon Taufel", role: "Former Cricket Umpire", color: "from-green-500 to-emerald-500" },
-    { name: "Jatin Sapru", role: "Star Sports Presenter", color: "from-purple-500 to-pink-500" },
-    { name: "Anil Swarup", role: "Former IAS Officer", color: "from-orange-500 to-red-500" },
-    { name: "Pankhuri Gidwani", role: "Model & Entrepreneur", color: "from-pink-500 to-rose-500" },
+    {
+        name: "Dr. Kiran Bedi",
+        role: "24th Lt. Governor Puducherry",
+        image: "/kiran_bedi-CuRudpqH.webp",
+        color: "from-blue-500 to-cyan-500",
+    },
+    {
+        name: "Simon Taufel",
+        role: "Former Cricket Umpire",
+        image: "/simon-CnwpwyAH.webp",
+        color: "from-green-500 to-emerald-500",
+    },
+    {
+        name: "Jatin Sapru",
+        role: "Star Sports Presenter",
+        image: "/jatin-Bl0GbvUs.webp",
+        color: "from-purple-500 to-pink-500",
+    },
+    {
+        name: "Anil Swarup",
+        role: "Former IAS Officer",
+        image: "/anilswarup-BgCJbeYg.webp",
+        color: "from-orange-500 to-red-500",
+    },
+    {
+        name: "Pankhuri Gidwani",
+        role: "Model & Entrepreneur",
+        image: "/pankhuri-Cc_JQRug.webp",
+        color: "from-pink-500 to-rose-500",
+    },
 ];
 
 export default function Speakers() {
@@ -29,16 +54,18 @@ export default function Speakers() {
                 {speakers.map((speaker, index) => (
                     <div
                         key={index}
-                        className="flex-shrink-0 w-[300px] md:w-[400px] relative group snap-center animate-fade-up"
+                        className="flex-shrink-0 w-[260px] md:w-[340px] relative group snap-center animate-fade-up"
                     >
-                        <div className="aspect-[3/4] bg-neutral-900 rounded-xl overflow-hidden relative border border-white/5 transition-all duration-500 group-hover:border-conso-red/50 group-hover:shadow-[0_0_50px_rgba(255,46,46,0.3)] group-hover:scale-[1.02]">
-                            {/* Placeholder Content for Image */}
-                            <div className={`absolute inset-0 bg-gradient-to-b ${speaker.color} opacity-10 group-hover:opacity-20 transition-opacity`} />
-                            <div className="absolute inset-0 flex items-center justify-center text-white/10 group-hover:text-white/20 transition-colors">
-                                <User size={120} />
-                            </div>
+                        <div className="aspect-[3/4] bg-neutral-900 rounded-xl overflow-hidden relative border border-white/5 transition-all duration-500 shadow-[0_20px_60px_rgba(0,0,0,0.55)] group-hover:border-conso-red/50 group-hover:shadow-[0_30px_70px_rgba(0,0,0,0.6)] group-hover:scale-[1.01]">
+                            <Image
+                                src={speaker.image}
+                                alt={speaker.name}
+                                fill
+                                className="object-cover object-center"
+                                sizes="(max-width: 768px) 300px, 400px"
+                            />
 
-                            <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
+                            <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
                                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                     <h3 className="text-2xl font-bold text-white mb-2 leading-tight">
                                         {speaker.name}

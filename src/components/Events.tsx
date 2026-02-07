@@ -1,36 +1,49 @@
 "use client";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const events = [
     {
-        title: "Vishleshan",
-        category: "Case Study",
-        description: "Analyze, Innovate, Solve. The ultimate analytics challenge.",
-        date: "Day 1"
-    },
-    {
-        title: "Codebizz",
-        category: "Hackathon",
-        description: "Where coding meets business logic. Build for the future.",
-        date: "Day 1-2"
-    },
-    {
-        title: "Biz-MUN",
-        category: "Simulation",
-        description: "Debate, Negotiate, Policy. Corporate simulation at its best.",
-        date: "Day 2"
-    },
-    {
-        title: "Wallstreet",
-        category: "Finance",
-        description: "Master the markets in this virtual trading showdown.",
-        date: "Day 3"
+        title: "CEO",
+        category: "Leadership",
+        description: "Real-world challenges, calculated risks, and competition to become influential leaders.",
+        date: "Consortium '26",
+        logo: "/events/ceo-CiTAFyd_.webp",
     },
     {
         title: "IPL Auction",
         category: "Strategy",
-        description: "Bid, Build, Win. The most intense strategy game.",
-        date: "Day 3"
+        description: "Build the strongest team with smart bidding, analytics, and prediction.",
+        date: "Consortium '26",
+        logo: "/events/iplauction-CM6tDsO9.webp",
+    },
+    {
+        title: "Jugaad",
+        category: "Innovation",
+        description: "Teams receive Rs 100 to maximize through creative ideation, bargaining, and financial management.",
+        date: "Consortium '26",
+        logo: "/events/jugaad-Cwv8sXek.webp",
+    },
+    {
+        title: "Wallstreet",
+        category: "Finance",
+        description: "A stock trading competition to test managerial skills and market intuition.",
+        date: "Consortium '26",
+        logo: "/events/wallstreet-BjgcvuFk.webp",
+    },
+    {
+        title: "StartUp Conclave",
+        category: "Conclave",
+        description: "A national business plan competition that turns ideas into successful ventures.",
+        date: "Consortium '26",
+        logo: "/events/suc-Bc2Eb1A0.webp",
+    },
+    {
+        title: "Startup Expo",
+        category: "Exhibition",
+        description: "A national exhibition for startups to showcase innovations and network with investors.",
+        date: "Consortium '26",
+        logo: "/events/expo-BuSr9Ws3.webp",
     },
 ];
 
@@ -58,9 +71,22 @@ export default function Events() {
                                     <ArrowUpRight className="text-white/40 group-hover:text-conso-red group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                                 </div>
 
-                                <h3 className="text-2xl font-bold mb-3 group-hover:text-conso-red transition-colors">
-                                    {event.title}
-                                </h3>
+                                <div className="flex items-center gap-4 mb-3">
+                                    {event.logo ? (
+                                        <div className="relative h-10 w-20 shrink-0">
+                                            <Image
+                                                src={event.logo}
+                                                alt={`${event.title} logo`}
+                                                fill
+                                                className="object-contain"
+                                                sizes="80px"
+                                            />
+                                        </div>
+                                    ) : null}
+                                    <h3 className="text-2xl font-bold group-hover:text-conso-red transition-colors">
+                                        {event.title}
+                                    </h3>
+                                </div>
 
                                 <p className="text-gray-400 text-sm leading-relaxed mb-6 group-hover:text-gray-300 transition-colors">
                                     {event.description}

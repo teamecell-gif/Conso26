@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -58,12 +59,18 @@ export default function Hero() {
                     className="flex flex-col md:flex-row items-center justify-center gap-6 animate-fade-up"
                     style={{ animationDelay: "0.4s" }}
                 >
-                    <button className="px-8 py-4 bg-conso-red text-black font-bold text-lg uppercase tracking-widest hover:bg-white transition-colors">
+                    <Link
+                        href="/#about"
+                        className="px-8 py-4 bg-conso-red text-black font-bold text-lg uppercase tracking-widest hover:bg-white transition-colors"
+                    >
                         Get Started
-                    </button>
-                    <button className="px-8 py-4 border border-white/20 text-white font-bold text-lg uppercase tracking-widest hover:bg-white/10 transition-colors backdrop-blur-sm">
-                        Watch Teaser
-                    </button>
+                    </Link>
+                    <a
+                        href="/schedule"
+                        className="px-8 py-4 border border-white/20 text-white font-bold text-lg uppercase tracking-widest hover:bg-white/10 transition-colors backdrop-blur-sm"
+                    >
+                        Schedule
+                    </a>
                 </div>
             </div>
 

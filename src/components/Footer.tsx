@@ -22,16 +22,36 @@ export default function Footer() {
                             The Annual Entrepreneurship Summit of VNIT Nagpur. Igniting minds, fostering innovation.
                         </p>
                         <div className="flex gap-4">
-                            <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all">
+                            <Link
+                                href="https://www.instagram.com/ecellvnit/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all"
+                            >
                                 <Instagram size={20} />
                             </Link>
-                            <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all">
+                            <Link
+                                href="https://www.linkedin.com/company/theentrepreneurshipcellvnit/mycompany/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all"
+                            >
                                 <Linkedin size={20} />
                             </Link>
-                            <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all">
+                            <Link
+                                href="https://twitter.com/ecell_vnit"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all"
+                            >
                                 <Twitter size={20} />
                             </Link>
-                            <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all">
+                            <Link
+                                href="https://m.facebook.com/vnitecell/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-conso-red hover:text-white transition-all"
+                            >
                                 <Facebook size={20} />
                             </Link>
                         </div>
@@ -67,7 +87,7 @@ export default function Footer() {
                     <div>
                         <h3 className="font-bold text-lg mb-6 uppercase tracking-wider">Location</h3>
                         <p className="text-gray-400 leading-relaxed">
-                            E-Cell Office, Student Activity Centre,<br />
+                            E-Cell Office, First Floor Student Canteen ,<br />
                             Visvesvaraya National Institute of Technology,<br />
                             South Ambazari Road, Nagpur,<br />
                             Maharashtra - 440010

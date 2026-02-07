@@ -2,62 +2,129 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 import { ArrowUpRight, Calendar, MapPin } from "lucide-react";
 
 const allEvents = [
     {
+        title: "Escape Room",
+        category: "Challenge",
+        description: "Consulting-style case puzzles with escape-room gamification where teams solve challenges to progress.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-rose-500/20 to-red-500/20",
+        logo: "/events/escaperoom-CL_1DC28.webp",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLScsR58O5viGcxSRaCAL69OYS2Y9dplU2vEt0C1qRPDGIV2ukQ/viewform?usp=send_form"
+    },
+    {
         title: "IPL Auction",
         category: "Strategy",
-        description: "Bid, Build, Win. The most intense strategy game where you build your dream team with a limited budget.",
-        date: "Day 3",
-        location: "Main Ground",
+        description: "Build the strongest team with smart bidding, analytics, and prediction.",
+        date: "TBA",
+        location: "VNIT Nagpur",
         image: "from-indigo-500/20 to-blue-500/20",
+        logo: "/events/iplauction-CM6tDsO9.webp",
         link: "https://ipl.ecellvnit.org/"
+    },
+    {
+        title: "NEO",
+        category: "Program",
+        description: "A PAN India exam and skill program for classes 7-12 to nurture entrepreneurial skills.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-emerald-500/20 to-green-500/20",
+        logo: "/events/neo-s6SKDkcM.webp",
+        link: "https://neo.ecellvnit.org/"
     },
     {
         title: "Jugaad",
         category: "Innovation",
-        description: "The ultimate test of frugal innovation. Solve complex problems with simple, creative solutions.",
-        date: "Day 1",
-        location: "Auditorium",
+        description: "Teams receive Rs 100 to maximize through creative ideation, bargaining, and financial management.",
+        date: "TBA",
+        location: "VNIT Nagpur",
         image: "from-orange-500/20 to-amber-500/20",
+        logo: "/events/jugaad-Cwv8sXek.webp",
         link: "https://jugaad.ecellvnit.org/"
     },
     {
-        title: "CEO",
-        category: "Management",
-        description: "Consortium Entrepreneurship Open. A challenge that tests your leadership and crisis management skills.",
-        date: "Day 2",
-        location: "Senate Hall",
-        image: "from-blue-500/20 to-cyan-500/20",
-        link: "https://ceo.ecellvnit.org/"
-    },
-    {
-        title: "Startup Conclave",
+        title: "StartUp Conclave",
         category: "Conclave",
-        description: "Connect with industry leaders, investors, and visionaries. A platform for networking and growth.",
-        date: "Day 2",
-        location: "Main Auditorium",
+        description: "A national business plan competition that turns ideas into successful ventures.",
+        date: "TBA",
+        location: "VNIT Nagpur",
         image: "from-purple-500/20 to-pink-500/20",
-        link: "https://suc.ecellvnit.org/"
+        logo: "/events/suc-Bc2Eb1A0.webp",
+        link: "https://startupconclave.ecellvnit.org/"
     },
     {
-        title: "Neo",
-        category: "Startup Expo",
-        description: "Showcase your startup to investors and industry leaders. Network, pitch, and grow your venture.",
-        date: "Day 2",
-        location: "Exhibition Hall",
-        image: "from-emerald-500/20 to-green-500/20",
-        link: "https://neo.ecellvnit.org/"
+        title: "Wallstreet",
+        category: "Finance",
+        description: "A stock trading competition to test managerial skills, trading acumen, and market intuition.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-slate-500/20 to-gray-500/20",
+        logo: "/events/wallstreet-BjgcvuFk.webp",
+        link: "https://wallstreet.ecellvnit.org/"
+    },
+    {
+        title: "CEO",
+        category: "Leadership",
+        description: "Real-world challenges, calculated risks, and competition to become influential leaders.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-blue-500/20 to-cyan-500/20",
+        logo: "/events/ceo-CiTAFyd_.webp",
+        link: "https://ceo.ecellvnit.org/"
     },
     {
         title: "Startup Expo",
         category: "Exhibition",
-        description: "Experience the future of innovation. Explore groundbreaking products and meet the founders of tomorrow.",
-        date: "Day 1-3",
-        location: "Exhibition Ground",
+        description: "A national exhibition for startups to showcase innovations and network with participants and investors.",
+        date: "TBA",
+        location: "VNIT Nagpur",
         image: "from-rose-500/20 to-red-500/20",
+        logo: "/events/expo-BuSr9Ws3.webp",
         link: "https://expo.ecellvnit.org/"
+    },
+    {
+        title: "Hult Prize",
+        category: "Competition",
+        description: "The world's largest student startup competition focused on SDG-aligned businesses.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-amber-500/20 to-yellow-500/20",
+        logo: "/events/hultprize-CoQqOHCs.webp",
+        link: "https://www.instagram.com/hultprize_vnit/"
+    },
+    {
+        title: "Internship Fair",
+        category: "Career",
+        description: "Connect - Grow - Innovate. Meet recruiters and explore internship opportunities.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-teal-500/20 to-emerald-500/20",
+        logo: "/events/internshipfair-ognCY5vl.webp",
+        link: "mailto:team_ecell@vnit.ac.in"
+    },
+    {
+        title: "Networking Arena",
+        category: "Workshop",
+        description: "Connect with experts across domains to exchange ideas, guidance, and collaboration.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-fuchsia-500/20 to-pink-500/20",
+        logo: "/events/networkingarena-D40gd633.webp",
+        link: "https://unstop.com/o/E3sMC2w?lb=XXfTQEEf&utm_medium=Share&utm_source=teamvni42274&utm_campaign=Workshops"
+    },
+    {
+        title: "Pitch in the Car",
+        category: "Pitch",
+        description: "A 4-minute startup pitch judged on innovation, clarity, feasibility, and market potential.",
+        date: "TBA",
+        location: "VNIT Nagpur",
+        image: "from-pink-500/20 to-rose-500/20",
+        logo: "/events/pitchinthecar-DyolDNEq.webp",
+        link: "https://unstop.com/o/CGW3AvD?lb=6vnimjjW&utm_medium=Share&utm_source=aryansin7258&utm_campaign=Competitions"
     },
 ];
 
@@ -93,9 +160,22 @@ export default function EventsPage() {
                                     <ArrowUpRight className="text-white/40 group-hover:text-conso-red group-hover:scale-125 transition-all duration-300" />
                                 </div>
 
-                                <h3 className="text-3xl font-bold mb-4 group-hover:text-conso-red transition-colors">
-                                    {event.title}
-                                </h3>
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="relative h-12 w-24 shrink-0">
+                                        <Image
+                                            src={event.logo}
+                                            alt={`${event.title} logo`}
+                                            fill
+                                            className="object-contain"
+                                            sizes="96px"
+                                        />
+                                    </div>
+                                    <h3 className="text-3xl font-bold group-hover:text-conso-red transition-colors">
+                                        {event.title}
+                                    </h3>
+                                </div>
+
+                                <div className="h-px w-full bg-white/10 mb-4" />
 
                                 <p className="text-gray-300 text-lg leading-relaxed mb-auto">
                                     {event.description}

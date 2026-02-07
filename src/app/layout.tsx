@@ -16,6 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Consortium '26 | E-Cell VNIT",
   description: "The Annual Entrepreneurship Summit of VNIT Nagpur",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 
