@@ -1,6 +1,4 @@
 "use client";
-
-import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const events = [
@@ -40,23 +38,14 @@ export default function Events() {
     return (
         <section id="events" className="py-32 bg-background relative px-6">
             <div className="container mx-auto">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-display font-bold mb-16 text-center uppercase tracking-tight"
-                >
+                <h2 className="text-4xl md:text-6xl font-display font-bold mb-16 text-center uppercase tracking-tight">
                     Flagship <span className="text-conso-red">Events</span>
-                </motion.h2>
+                </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {events.map((event, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
                             className="group relative p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden hover:border-conso-red/50 transition-colors duration-500"
                         >
                             <div className="absolute inset-0 bg-gradient-to-br from-conso-red/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -82,7 +71,7 @@ export default function Events() {
                                     {event.date}
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

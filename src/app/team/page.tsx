@@ -3,7 +3,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Linkedin, Mail, Phone, User } from "lucide-react";
 
 const adminTeam = [

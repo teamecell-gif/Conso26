@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
@@ -75,29 +74,25 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Menu */}
-            <AnimatePresence>
-                {mobileMenuOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-black/95 backdrop-blur-xl border-b border-white/10 overflow-hidden"
-                    >
-                        <div className="flex flex-col p-6 gap-6 items-center">
-                            {NAV_ITEMS.map((item, index) => (
-                                <Link
-                                    key={index}
-                                    href={item.href}
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    className="text-lg font-bold text-white hover:text-conso-red uppercase tracking-widest"
-                                >
-                                    {item.name}
-                                </Link>
-                            ))}
-                        </div>
-                    </motion.div>
+            <div
+                className={cn(
+                    "md:hidden bg-black/95 backdrop-blur-xl border-b border-white/10 overflow-hidden transition-all duration-300",
+                    mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
                 )}
-            </AnimatePresence>
+            >
+                <div className="flex flex-col p-6 gap-6 items-center">
+                    {NAV_ITEMS.map((item, index) => (
+                        <Link
+                            key={index}
+                            href={item.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="text-lg font-bold text-white hover:text-conso-red uppercase tracking-widest"
+                        >
+                            {item.name}
+                        </Link>
+                    ))}
+                </div>
+            </div>
         </nav>
     );
 }

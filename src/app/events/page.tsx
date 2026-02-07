@@ -2,7 +2,6 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
 import { ArrowUpRight, Calendar, MapPin } from "lucide-react";
 
 const allEvents = [
@@ -68,28 +67,19 @@ export default function EventsPage() {
             <Navbar />
 
             <div className="pt-32 pb-20 px-6 container mx-auto">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center mb-20"
-                >
+                <div className="text-center mb-20">
                     <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 uppercase tracking-tight">
                         All <span className="text-conso-red">Events</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                         Discover the challenges, workshops, and simulations designed to test your mettle.
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {allEvents.map((event, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
                             className="group relative rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm hover:border-conso-red/50 transition-colors duration-500 min-h-[300px] flex flex-col"
                         >
                             {/* Background Gradient */}
@@ -133,7 +123,7 @@ export default function EventsPage() {
                                     </a>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

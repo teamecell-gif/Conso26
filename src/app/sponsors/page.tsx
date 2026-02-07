@@ -2,7 +2,6 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { motion } from "framer-motion";
 
 // Placeholder data - In real app, this would be images
 const sponsors = {
@@ -42,19 +41,14 @@ export default function SponsorsPage() {
             <Navbar />
 
             <div className="pt-32 pb-20 px-6 container mx-auto">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="text-center mb-20"
-                >
+                <div className="text-center mb-20">
                     <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 uppercase tracking-tight">
                         Our <span className="text-conso-red">Partners</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                         The visionary organizations making Consortium '26 possible.
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="space-y-24 max-w-6xl mx-auto">
                     {/* Title Sponsor */}

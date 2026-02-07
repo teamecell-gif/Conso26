@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 export default function About() {
     return (
         <section id="about" className="relative py-32 overflow-hidden bg-background">
@@ -9,13 +7,7 @@ export default function About() {
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-conso-red/5 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="container mx-auto px-6">
-                <motion.div
-                    initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
-                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8 }}
-                    className="max-w-4xl mx-auto text-center"
-                >
+                <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-4xl md:text-6xl font-display font-bold mb-12 uppercase tracking-tight">
                         About <span className="text-conso-red">Consortium</span>
                     </h2>
@@ -31,7 +23,7 @@ export default function About() {
                             Join us to <span className="text-conso-red font-bold">ignite your entrepreneurial spark</span> and witness the convergence of technology, business, and creativity.
                         </p>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </section>
     );

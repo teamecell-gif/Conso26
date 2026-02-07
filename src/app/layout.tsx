@@ -17,9 +17,6 @@ export const metadata: Metadata = {
   description: "The Annual Entrepreneurship Summit of VNIT Nagpur",
 };
 
-import Loader from "@/components/Loader";
-
-// ... imports
 
 export default function RootLayout({
   children,
@@ -31,7 +28,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased bg-background text-foreground`}
       >
-        <Loader />
         {children}
       </body>
     </html>
