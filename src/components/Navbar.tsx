@@ -58,9 +58,11 @@ export default function Navbar() {
                             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-conso-red transition-all duration-300 group-hover:w-full" />
                         </Link>
                     ))}
+                    <Link href="/events">
                     <button className="px-6 py-2 bg-conso-red hover:bg-conso-red-dark text-white text-sm font-bold uppercase tracking-wider transition-all transform hover:scale-105 clip-path-slant">
                         Register
                     </button>
+                        </Link>
                 </div>
 
                 {/* Mobile Toggle */}
