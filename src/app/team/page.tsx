@@ -22,9 +22,9 @@ const adminTeam = [
         image: "/khatri.webp",
     },
     {
-        name: "Dr. Chayan Das",
+        name: "Dr. Piyush P. Wanjari​",
         position: "Professor Incharge",
-        image: "/chayan.webp",
+        image: "/py.jpg",
     },
 ];
 
